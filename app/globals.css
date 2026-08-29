@@ -1,26 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* Základné pozadie a text webu */
+    --background: #f4f6f8;
+    --foreground: #1e293b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+    /* Hlavné farby značky z loga */
+    --color-brand-blue: #1b324b;          /* Tmavá modrá z kruhu loga */
+    --color-brand-silver: #a8b3bc;        /* Strieborno-sivá zo symbolu */
+    --color-brand-silver-light: #c8d1d9;  /* Svetlý chrómový odlesk */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    /* Neutrálne farby pre web */
+    --color-app-bg: #f4f6f8;              /* Svetlá sivá pre celkový web */
+    --color-text-main: #1e293b;           /* Tmavý grafit pre hlavný text */
+    --color-text-muted: #64748b;          /* Stredná sivá pre podnadpisy/popisy */
+    --color-titanium-border: #a8b3bc;     /* Ohraničenie vo farbe striebra */
+
+    /* Farby pre tlačidlá */
+    --color-btn-dark: #1e293b;            /* Tmavé pozadie */
+    --color-btn-dark-hover: #0f172a;      /* Tmavé pozadie pri hoveri */
+
+    /* Akcentná zlatá farba pre text v tlačidlách */
+    --color-gold: #d4af37;                /* Zlatá pre text a akcenty */
+    --color-gold-hover: #f59e0b;          /* Zlatá pri hoveri */
+
+    /* Metalický gradient v tónoch loga (Modro-strieborný kov) */
+    --background-image-metallic-silver: linear-gradient(
+            135deg,
+            #1b324b 0%,
+            #3a526d 25%,
+            #a8b3bc 50%,
+            #1b324b 75%,
+            #c8d1d9 100%
+    );
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
 }
