@@ -47,3 +47,18 @@ body {
 .font-cinzel {
     font-family: 'Cinzel', serif;
 }
+
+.hero-lines-pattern {
+    --lines-color: #e5e7eb;  /* Svetlosivá farba čiar */
+    --lines-thickness: 1px;  /* Hrúbka čiary */
+    --lines-gap: 12px;       /* Vzdialenosť medzi čiarami */
+
+    background-color: #fcfbf9;
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--lines-color),
+            var(--lines-color) var(--lines-thickness),
+            transparent var(--lines-thickness),
+            transparent var(--lines-gap)
+    );
+}

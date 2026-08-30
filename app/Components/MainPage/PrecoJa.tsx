@@ -4,14 +4,14 @@ import { FiCheckCircle, FiAward, FiMaximize2 } from "react-icons/fi";
 
 const PrecoJa = () => {
     return (
-        <section className="py-16 px-6 max-w-6xl mx-auto flex flex-col items-center border-b border-b-titanium-border">
+        <section className="py-16 px-6  mx-auto flex flex-col items-center border-b border-b-titanium-border w-full">
 
             <h2 className="font-cinzel text-3xl font-bold text-text-main mb-12 tracking-wide uppercase text-center">
                 Prečo Ja
             </h2>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
 
 
                 <Card className="bg-btn-dark p-6 rounded-3xl shadow-lg border border-titanium-border/20 flex flex-col items-center text-center">

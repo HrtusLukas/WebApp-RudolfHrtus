@@ -12,7 +12,7 @@ const Header = () => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            if (currentScrollY < lastScrollY.current && currentScrollY > 1000) {
+            if (currentScrollY < lastScrollY.current && currentScrollY > 200) {
                 console.log(currentScrollY);
                 setIsVisible(true);
             } else {
@@ -32,13 +32,13 @@ const Header = () => {
         <header
             className={`${
                 isVisible ? "fixed top-0 left-0 " : "relative"
-            } grid grid-cols-3 h-32 w-full items-center px-8 bg-app-bg border-b border-b-titanium-border`}
+            } grid grid-cols-3 lg:h-32 h-24 md:h-32 w-full lg:items-center  px-8 bg-app-bg border-b border-b-titanium-border`}
         >
             <div></div>
 
             <div className="justify-self-center">
-                <Link href="/" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <img className="h-44 max-w-none object-contain" src="/logo.png" alt="Logo"/>
+                <Link href="/" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                    <img className="lg:h-44 h-32 max-w-none object-contain" src="/logo.png" alt="Logo"/>
                 </Link>
             </div>
 
