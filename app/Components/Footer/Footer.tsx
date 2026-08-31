@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="flex flex-col w-full  items-center font-cinzel">
+        <div className="flex flex-col w-full  items-center font-cinzel bg-app-bg text-text-main">
                 <div className="w-[90%] ml-[10%] hidden lg:inline h-24 bg-app-bg lg:[--line:#e5e7eb] lg:[--gap:10px] lg:bg-[repeating-linear-gradient(45deg,var(--line),var(--line)_1px,transparent_1px,transparent_var(--gap))]"></div>
                 <div className="flex md:flex-row flex-col  justify-between items-center border-b border-b-titanium-border w-[80%] ">
                     <img className="lg:h-44 h-36 md:h-44 max-w-none object-contain" src="/logo.png" alt="Logo"/>
